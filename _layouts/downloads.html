@@ -1,0 +1,23 @@
+<html>
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+  <head>
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    {% include head.html %}
+    <body>
+        {% include nav-down.html %}
+        {% include services.html %}
+        {% include footer.html %}
+        {% include scripts.html %}
+    <div class="loader-wrapper">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+  </body>
+</html>

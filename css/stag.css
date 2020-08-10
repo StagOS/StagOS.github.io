@@ -1,0 +1,836 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* 01. GLOBAL STYLES ============================================ */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer {
+    padding: auto;
+    background-color: rgba(0,0,0,1);
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-vertical-center-header {
+  margin-top: -10%;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* 02. BUTTON SETTINGS ============================================ */
+.btn-dark {
+    border-radius: 25px;
+    color: #4197d9;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #415dd9;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.btn-light {
+    border-radius: 25px;
+    color: #4197d9;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #415dd9;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* 03. SIDE MENU ============================================ */
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#stag-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* 04. PARALLAX SETTINGS ============================================ */
+.parallax {
+  /* image */
+  background-image: url(../img/background.svg);
+
+  /* Set a specific height */
+  height: 100%;
+  
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+} 
+
+.parallax-slide {
+  /* The image used */
+  background-image: url(../img/background.svg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+/*blur
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through 
+  color: white;
+  font-weight: bold;
+  border: 2px solid #19FFFF;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 40%;
+  padding: 100px;
+  text-align: center;
+}*/
+
+/* 05. CALLOUT SETTINGS ============================================ */
+
+.callout {
+    display: table; 
+    width: 100%;
+    height: auto;  
+    background-image: rgba(0,0,0, 0.7);
+}
+
+.bg-callout {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /*border: 1px solid #9327A4;*/
+  position: center;
+  left: 50%;
+  z-index: 2;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+}
+
+.callout-img {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: center;
+  left: 50%;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.png_devices {
+    height: 10%;
+    width: 80%;
+}
+
+.callout-text-left {
+  line-height: 40px;  
+  float: left;
+  text-align: center;
+  margin-left: 200px;
+  padding: 400px 0;
+}
+.callout-text-right {
+  line-height: 40px;  
+  float: right;
+  text-align: center;
+  margin-right: 200px;
+  padding: 400px 0;
+}
+
+/* 06. STAG LOGO ============================================ */
+.logo_circle {
+  border: 3px solid #7E9CC2;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.png_circle img {
+  width: 80%;
+  height: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #0a1e2e;
+  top: 10;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c2 {
+  width: 210px;
+  height: 210px;
+  border-color: #143f61;
+}
+
+.c3 {
+  width: 180px;
+  height: 180px;
+  border-color: #21679e;
+}
+
+.c4 {
+  width: 150px;
+  height: 150px;
+  border-color: #3497e3;
+}
+.image-circle {
+    width:50%;
+}
+
+/* 07. CALLOUT ANIMATION SETTINGS ============================================ */
+.inline-photo {
+  opacity: 20;
+  transform: translateY(5em) rotateZ(0deg); 
+  transition: transform 2s .25s,
+              opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.align-right {
+	float: right;
+    top: -10;
+	margin-right: 20px;
+}
+
+.entry-content {
+    overflow: visible;
+}
+
+ .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* 08. DOWNLOADS SETTINGS ============================================ */
+.bg-devices {
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  z-index: 0;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.oneplus {
+    max-width:60%;
+    height:auto;
+    left: 15%;
+    position: absolute;
+}
+
+#downloads {
+	padding: 60px 0;
+	text-align: center;	
+}
+.download-item {
+    padding-bottom: 30px;
+}
+
+.download-item p {
+	font-size: 10px;
+	text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.download-item:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition: transform .4s; /* Animation */
+  z-index: 3;
+}
+
+/* 09. Loader SETTINGS ============================================ */
+body {
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+.content {
+  display: flex;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 10. TEAMS SETTINGS ============================================ */
+.teamimg {
+   border-radius: 100%;
+   width: 200px;
+   height: 200px;
+}
+
+.separator {
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.6);
+	width: 50px;
+    border-radius: 25px; 
+	height: 5px;
+} 
+
+#speakers {
+	padding: 60px 0;
+	text-align: center;	
+}
+
+#speakers p {
+	padding: 20px 0 60px;
+	color: #A42BB4;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+}
+
+#speakers h3 {
+	padding: 0 0 15px;
+	font-family: 'norwester';
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#speakers h4  {
+	margin-top: -20px;
+	font-size: 24px;
+	font-weight: 400;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#speakers h4 span {
+	display: block;
+	position: relative;
+	left: -40px;
+	top: 10px;
+	font-size: 20px;
+	background: none;
+	padding: 0;
+}
+
+#speakers img {
+	width: 100%;
+	max-width: 240px;
+	border-radius: 50%;  
+	box-shadow: 5px 5px 0px rgba(0,0,0, 0.3);
+	transition: all 0.1s ease-in;
+}
+	
+#speakers img:hover {
+	border: 5px solid rgba(0,0,0, 0.7);
+	position: relative;
+	z-index: 10;
+	transition: all 0.1s ease-in;	
+}
+
+#speakers span {
+	padding: 8px 20px;
+	position: relative;
+	top: -20px;
+	left: 0px;
+	display: inline-block;
+	background: rgba(0,0,0, 0.9);
+	border-radius: 50px 50px 50px 50px;
+	font-size: 16px;
+}
+
+/* Member Image Hover Effect */
+.hover_img {
+  display: none
+}
+
+.member-profile:hover .unhover_img{
+  display: none;
+}
+
+.member-profile:hover .hover_img {
+  display: block;
+}
+
+/* Rows Optimization */
+.row2 {
+	display: none;
+}
+
+.row1 .col-md-3, .row2 .col-md-3 {
+	padding-bottom: 40px;
+}
+
+/* 11. GALLERY SETTINGS ============================================ */
+#wrapper {
+	left:50%;
+	perspective:700px;
+}
+
+#left, #right {
+	position:absolute;
+	left:50%;
+    top: 50%;
+	transform:translate(-50%, -50%);
+	cursor:pointer;
+}
+
+.bg-slide {
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: center;
+  left: 50%;
+  z-index: 0;
+  width: 100%;
+  padding: 100px;
+  text-align: center;
+  /*overflow: hidden;*/
+  overflow-x: hidden;
+}
+
+.left {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: -400px;
+    background-color: rgba(0,0,0, 0);
+}
+
+#cta-left{
+    width:100%; cursor: pointer; position: absolute;
+    margin-left: 3px;
+}
+
+#cta-left .arrow-left{left: 30%;}
+.arrow-left {position: absolute; bottom: 0;  margin-left: 0px; width: 12px; height: 12px; background-size: contain; top:13px;}
+.segunda-left{margin-left: -8px;}
+.next-left {
+    transform: rotate(180deg);
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    
+}
+
+@keyframes bounceAlpha-left {
+  0% {opacity: 1; transform: translateX(0px)  scale(1) rotate(180deg);}
+  25%{opacity: 0; transform:translateX(-10px) scale(0.9) rotate(180deg);}
+  26%{opacity: 0; transform:translateX(10px) scale(0.9) rotate(180deg);}
+  55% {opacity: 1; transform: translateX(0px) scale(1) rotate(180deg);}
+}
+
+.bounceAlpha-left {
+    animation-name: bounceAlpha-left;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow-left.primera-left.bounceAlpha-left {
+    animation-name: bounceAlpha-left;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.left:hover .arrow-left{
+    animation-name: bounceAlpha-left;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.left:hover .arrow-left.primera-left{
+    animation-name: bounceAlpha-left;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.right {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left:400px;
+    background-color: rgba(0,0,0, 1);
+}
+
+#cta{
+    width:100%; cursor: pointer; position: absolute;
+}
+
+#cta .arrow{left: 30%;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:13px;}
+.segunda{margin-left: 8px;}
+.next {
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.right:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.right:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+#carousel {
+	transform-origin:center center -450px;
+	transform-style:preserve-3d;
+	transition:all 1s;
+    height: 500px;
+}
+.imgBlock {
+	position:absolute;
+	top:20%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-150px;
+	transform-style:preserve-3d;
+	transform-origin:center center;
+	z-index:2;
+}
+
+.spinner-img {
+	width:auto;
+	height:500px;
+}
+.imgBlock:nth-of-type(1) {
+	transform:translate3d(0, 0, 0px) rotateY(0deg);
+}
+.imgBlock:nth-of-type(2) {
+	transform:translate3d(320px, 0, -130px) rotateY(45deg);
+}
+.imgBlock:nth-of-type(3) {
+	transform:translate3d(450px, 0, -450px) rotateY(90deg);
+}
+.imgBlock:nth-of-type(4) {
+	transform:translate3d(320px, 0, -770px) rotateY(135deg);
+}
+.imgBlock:nth-of-type(5) {
+	transform:translate3d(0, 0, -900px) rotateY(180deg);
+}
+.imgBlock:nth-of-type(6) {
+	transform:translate3d(-320px, 0, -770px) rotateY(225deg);
+}
+.imgBlock:nth-of-type(7) {
+	transform:translate3d(-450px, 0, -450px) rotateY(270deg);
+}
+.imgBlock:nth-of-type(8) {
+	transform:translate3d(-320px, 0, -130px) rotateY(315deg);
+}
+    
+/* 12. FOOTER LOGOS ============================================ */
+.github {
+    width:auto;
+	height:40px;
+}
+
+/* 13. MOBILE DEVICES OPTIMIZATIONS ============================================ */
+@media (min-width: 568px) and (max-width: 992px) {
+
+	.row1 .col-md-3, .row2 .col-md-3 {
+		display: inline-block;
+		max-width: 50%;
+	}
+
+	#speakers img {max-width: 300px;}
+    
+    .inline-photo {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .inline-photo {
+        height: auto;
+        width: 100%;
+        transform: translateY(0em) rotateZ(0deg); 
+        transition: transform 2s .25s,
+                    opacity .3s .25s ease-out;
+         will-change: transform, opacity;
+    }
+    #left, #right {
+	    left: 50%;
+        top: 110%;
+    }
+    #right {
+	    margin-left:50px;
+    }
+    #left {
+	    margin-left:-50px;
+    }
+    .parallax-slide {
+        background-attachment: scroll;
+        background-position: 100% 100%;
+    }
+    .download-item:hover {
+        transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transition: transform .4s; /* Animation */
+        z-index: 3;
+    }
+}
