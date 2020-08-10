@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: stag-os.org # the base hostname & protocol for your site
 
-copyright: StagOs
+copyright: StagOS
 
 # Build settings
 markdown: kramdown
