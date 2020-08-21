@@ -1,6 +1,7 @@
 # Site settings
 title: StagOS
 email: support@stag-os.org
+descriptiopn: The most elegeant OS you can find based on AOSP straight from google, intrigued yet? If not atleast let the patronus drag you. Welcome to StagOS
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: stag-os.org # the base hostname & protocol for your site
 
